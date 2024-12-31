@@ -1,19 +1,18 @@
 package q555;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-
-		char[] ar = new char[10];
-		for (int i = 0; i < ar.length; i++) {
-			ar[i] = sc.next().charAt(0);
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str = br.readLine();
+		String result = "";
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) != ' ')
+				result += str.charAt(i);
 		}
-		sc.close();
-
-		for (int i = 0; i < ar.length; i++) {
-			System.out.print(ar[i]);
-		}
+		System.out.print(result);
 	}
 }
