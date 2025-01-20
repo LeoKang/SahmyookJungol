@@ -100,6 +100,7 @@ public class Main {
 
 		int time = 0;
 		int cCheese = 0;
+		
 		do {
 			time++;
 			initVisited();
