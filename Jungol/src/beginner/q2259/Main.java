@@ -83,7 +83,8 @@ public class Main {
 		int totalArea = dir_sum[0] * dir_sum[2];
 		int subArea = 1;
 		for (int i = 0; i < dbllist.size() - 3; i++) {
-			if (dbllist.get(i).dir == dbllist.get(i + 2).dir && dbllist.get(i + 1).dir == dbllist.get(i + 3).dir) {
+			if (dbllist.get(i).dir == dbllist.get(i + 2).dir
+					&& dbllist.get(i + 1).dir == dbllist.get(i + 3).dir) {
 				subArea = dbllist.get(i + 1).len * dbllist.get(i + 2).len;
 			}
 		}
